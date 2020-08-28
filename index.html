@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/vue.js"></script>
+    <title>Main Page</title>
+</head>
+<body>
+    <div id="controller">
+        <nav>
+            <h1>Back</h1>
+            <h1>{{jmeno_zapasu}}</h1>
+            <h1>Strelba</h1>
+        </nav>
+        <main id="app"></main>
+    </div>
+    <script>
+        const app = new Vue({
+            el: "#controller",
+            data:{
+                jmeno_zapasu: "jmeno zapasu 2.1"
+            }
+        });
+    </script>
+</body>
+</html>
